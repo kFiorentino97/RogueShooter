@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Background
+  - Bullet
+  - PlayerBullet
+  - Enemy
+  - EnemyBullet
+  - PlayerHitbox
+  - EnemyHitbox
+  - Manager
+  - leftName
+  - rightName
+  - EnemyHealthBar
+  - lifeCounter
+  - CutsceneUI
+  - leftSprite
+  - rightSprite
+  - DialogueBody
+  - NamePanelRight
+  - NamePanelLeft
+  - NameLeft
+  - Nameright
+  - GUIManager
+  - CursceneHandler
+  - DestructiveBullet
+  - Alt1Cd
+  - Alt2Cd
+  - MainCd
+  - EnemyBulletPool
+  - ProjectileDestroyer
+  - bgManager
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Background
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3705217835
+    locked: 0
+  - name: explosion sparks
+    uniqueID: 386829115
+    locked: 0
+  - name: PlayerBullets
+    uniqueID: 1562742199
+    locked: 0
+  - name: Player
+    uniqueID: 566966351
+    locked: 0
+  - name: Enemy
+    uniqueID: 3887187221
+    locked: 0
+  - name: PlayerAbility
+    uniqueID: 2980888935
+    locked: 0
+  - name: EnemyBullets
+    uniqueID: 3787122871
+    locked: 0
+  - name: PlayerSparks
+    uniqueID: 1799218581
+    locked: 0
+  - name: Hitbox Indicator
+    uniqueID: 1693635523
+    locked: 0
+  - name: UIBackdrop
+    uniqueID: 2366790429
+    locked: 0
+  - name: UITexture
+    uniqueID: 4103898205
+    locked: 0
+  - name: UI
+    uniqueID: 1595888263
+    locked: 0
+  - name: PauseUI
+    uniqueID: 4105095845
+    locked: 0
+  - name: Transitions
+    uniqueID: 815499665
+    locked: 0
+  - name: TransitionChoice
+    uniqueID: 1566564819
+    locked: 0
