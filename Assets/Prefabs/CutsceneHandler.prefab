@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5770367600774538765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5770367600774538767}
+  - component: {fileID: 5770367600774538766}
+  - component: {fileID: 5770367600774538760}
+  m_Layer: 0
+  m_Name: CutsceneHandler
+  m_TagString: CursceneHandler
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5770367600774538767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5770367600774538765}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 523.9601, y: 335.02203, z: -166.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5770367600774538766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5770367600774538765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66a0a2d4e22841bcae93b613d8ca777b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5770367600774538760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5770367600774538765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c78e2aeba204197bde2589da3d6cac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scn: {fileID: 0}
+  sprites:
+  - {fileID: 21300000, guid: 0c6ebfbbfa0678e4c9fb4774c67a3cb0, type: 3}
+  - {fileID: 21300000, guid: 14177815844e3c448a89ed8869973d04, type: 3}
+  - {fileID: 21300000, guid: 3340b35097d434240b02cf84c21932bd, type: 3}
+  - {fileID: 21300000, guid: 702f8132d5a6e644a857be4e40dea9e2, type: 3}
+  spriteChange: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 0.7176471}
+  nonSpeakingOffset: 0.1
+  endOnLast: 1
+  optionChose: 0
+  ended: 0
+  started: 0
+  textCrawlTime: 0.01
+  hasScene: 0

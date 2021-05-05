@@ -1,0 +1,116 @@
+\hypertarget{class_misc_1_1___mechanics_1_1_audio_manager}{}\doxysection{Misc.\+\_\+\+Mechanics.\+Audio\+Manager Class Reference}
+\label{class_misc_1_1___mechanics_1_1_audio_manager}\index{Misc.\_Mechanics.AudioManager@{Misc.\_Mechanics.AudioManager}}
+
+
+{\ttfamily \mbox{\hyperlink{class_misc_1_1___mechanics_1_1_audio_manager}{Audio\+Manager}}} exists to help aid with playing sounds, especially background music transitions.  
+
+
+Inheritance diagram for Misc.\+\_\+\+Mechanics.\+Audio\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_misc_1_1___mechanics_1_1_audio_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_misc_1_1___mechanics_1_1_audio_manager_a3532f77acc5e878714e3260794337eac}{Play\+Sound}} (string id)
+\begin{DoxyCompactList}\small\item\em For playing an individual sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_misc_1_1___mechanics_1_1_audio_manager_aeafc7229a8e9671aec85dff6e3d4af83}{Set\+Bg\+Track}} (string id)
+\begin{DoxyCompactList}\small\item\em For setting the background track of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_misc_1_1___mechanics_1_1_audio_manager_a28551f7a7c9fb4ea197df5da7d3fe652}{Mute}} ()
+\begin{DoxyCompactList}\small\item\em Toggles mute on the background track. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_misc_1_1___mechanics_1_1_audio_manager_a601c3580078dba69f8c7ca36b25eaf3f}{Mute}} (bool mute)
+\begin{DoxyCompactList}\small\item\em Mutes the track based on true or false. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_misc_1_1___mechanics_1_1_audio_manager_a8b70e3ac83adf3689b591cd646d3f905}{Restart\+Bg\+Track}} ()
+\begin{DoxyCompactList}\small\item\em Resets the bg track. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_misc_1_1___mechanics_1_1_audio_manager_aa65c0901538bae6cf4044a6760efd2d2}\label{class_misc_1_1___mechanics_1_1_audio_manager_aa65c0901538bae6cf4044a6760efd2d2}} 
+\mbox{\hyperlink{class_misc_1_1___mechanics_1_1_sound}{Sound}}\mbox{[}$\,$\mbox{]} {\bfseries sounds}
+\item 
+\mbox{\Hypertarget{class_misc_1_1___mechanics_1_1_audio_manager_adec274600fdb99bed74b9ef4893aa155}\label{class_misc_1_1___mechanics_1_1_audio_manager_adec274600fdb99bed74b9ef4893aa155}} 
+string {\bfseries bg\+Track}
+\item 
+\mbox{\Hypertarget{class_misc_1_1___mechanics_1_1_audio_manager_ad9429121a2ce68546b2dc4917b7394e9}\label{class_misc_1_1___mechanics_1_1_audio_manager_ad9429121a2ce68546b2dc4917b7394e9}} 
+bool {\bfseries start\+Mute}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \mbox{\hyperlink{class_misc_1_1___mechanics_1_1_audio_manager}{Audio\+Manager}}} exists to help aid with playing sounds, especially background music transitions. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_misc_1_1___mechanics_1_1_audio_manager_a28551f7a7c9fb4ea197df5da7d3fe652}\label{class_misc_1_1___mechanics_1_1_audio_manager_a28551f7a7c9fb4ea197df5da7d3fe652}} 
+\index{Misc.\_Mechanics.AudioManager@{Misc.\_Mechanics.AudioManager}!Mute@{Mute}}
+\index{Mute@{Mute}!Misc.\_Mechanics.AudioManager@{Misc.\_Mechanics.AudioManager}}
+\doxysubsubsection{\texorpdfstring{Mute()}{Mute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Misc.\+\_\+\+Mechanics.\+Audio\+Manager.\+Mute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Toggles mute on the background track. 
+
+\mbox{\Hypertarget{class_misc_1_1___mechanics_1_1_audio_manager_a601c3580078dba69f8c7ca36b25eaf3f}\label{class_misc_1_1___mechanics_1_1_audio_manager_a601c3580078dba69f8c7ca36b25eaf3f}} 
+\index{Misc.\_Mechanics.AudioManager@{Misc.\_Mechanics.AudioManager}!Mute@{Mute}}
+\index{Mute@{Mute}!Misc.\_Mechanics.AudioManager@{Misc.\_Mechanics.AudioManager}}
+\doxysubsubsection{\texorpdfstring{Mute()}{Mute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Misc.\+\_\+\+Mechanics.\+Audio\+Manager.\+Mute (\begin{DoxyParamCaption}\item[{bool}]{mute }\end{DoxyParamCaption})}
+
+
+
+Mutes the track based on true or false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mute} & True\+: mute, False\+: unmute.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_misc_1_1___mechanics_1_1_audio_manager_a3532f77acc5e878714e3260794337eac}\label{class_misc_1_1___mechanics_1_1_audio_manager_a3532f77acc5e878714e3260794337eac}} 
+\index{Misc.\_Mechanics.AudioManager@{Misc.\_Mechanics.AudioManager}!PlaySound@{PlaySound}}
+\index{PlaySound@{PlaySound}!Misc.\_Mechanics.AudioManager@{Misc.\_Mechanics.AudioManager}}
+\doxysubsubsection{\texorpdfstring{PlaySound()}{PlaySound()}}
+{\footnotesize\ttfamily void Misc.\+\_\+\+Mechanics.\+Audio\+Manager.\+Play\+Sound (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+For playing an individual sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the sound.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_misc_1_1___mechanics_1_1_audio_manager_a8b70e3ac83adf3689b591cd646d3f905}\label{class_misc_1_1___mechanics_1_1_audio_manager_a8b70e3ac83adf3689b591cd646d3f905}} 
+\index{Misc.\_Mechanics.AudioManager@{Misc.\_Mechanics.AudioManager}!RestartBgTrack@{RestartBgTrack}}
+\index{RestartBgTrack@{RestartBgTrack}!Misc.\_Mechanics.AudioManager@{Misc.\_Mechanics.AudioManager}}
+\doxysubsubsection{\texorpdfstring{RestartBgTrack()}{RestartBgTrack()}}
+{\footnotesize\ttfamily void Misc.\+\_\+\+Mechanics.\+Audio\+Manager.\+Restart\+Bg\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the bg track. 
+
+\mbox{\Hypertarget{class_misc_1_1___mechanics_1_1_audio_manager_aeafc7229a8e9671aec85dff6e3d4af83}\label{class_misc_1_1___mechanics_1_1_audio_manager_aeafc7229a8e9671aec85dff6e3d4af83}} 
+\index{Misc.\_Mechanics.AudioManager@{Misc.\_Mechanics.AudioManager}!SetBgTrack@{SetBgTrack}}
+\index{SetBgTrack@{SetBgTrack}!Misc.\_Mechanics.AudioManager@{Misc.\_Mechanics.AudioManager}}
+\doxysubsubsection{\texorpdfstring{SetBgTrack()}{SetBgTrack()}}
+{\footnotesize\ttfamily void Misc.\+\_\+\+Mechanics.\+Audio\+Manager.\+Set\+Bg\+Track (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+For setting the background track of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the track.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dakota/\+Rogue\+Shooter/\+Assets/\+Scripts/\+Misc. Mechanics/Audio\+Manager.\+cs\end{DoxyCompactItemize}

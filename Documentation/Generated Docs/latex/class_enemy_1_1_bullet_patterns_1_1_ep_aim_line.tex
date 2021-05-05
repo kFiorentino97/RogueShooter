@@ -1,0 +1,83 @@
+\hypertarget{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line}{}\doxysection{Enemy.\+Bullet\+Patterns.\+Ep\+Aim\+Line Class Reference}
+\label{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line}\index{Enemy.BulletPatterns.EpAimLine@{Enemy.BulletPatterns.EpAimLine}}
+
+
+Draws a line of bullets that are aimed at the palyer.  
+
+
+Inheritance diagram for Enemy.\+Bullet\+Patterns.\+Ep\+Aim\+Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a2fe524ec547d8e96bf153e7aeed94294}{Begin}} ()
+\begin{DoxyCompactList}\small\item\em Begins the enemy pattern to be repeated. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_ab9f5e07fd1bc9921108827b473fd4573}{Fire}} ()
+\begin{DoxyCompactList}\small\item\em Repeats individual fire until it reaches the end of the line, then changes direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_af5698e826a273d428be4bf32e4a111f3}\label{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_af5698e826a273d428be4bf32e4a111f3}} 
+void {\bfseries Individual\+Fire} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a5754d2e09961ef84036713a8aa98519b}\label{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a5754d2e09961ef84036713a8aa98519b}} 
+Vector3 {\bfseries line\+Start}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a54761b5a7c94a39f48af945b6fd5e6e9}\label{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a54761b5a7c94a39f48af945b6fd5e6e9}} 
+int {\bfseries bullet\+Count}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a82a142d6c3c48f7c8186139a3d35f3dc}\label{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a82a142d6c3c48f7c8186139a3d35f3dc}} 
+bool {\bfseries bounce\+Back}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a729be4648e45c5a03acd26fbefc927ac}\label{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a729be4648e45c5a03acd26fbefc927ac}} 
+int {\bfseries direction} = 1
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_af8978c39d3c8dae89a8eab233e81941b}\label{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_af8978c39d3c8dae89a8eab233e81941b}} 
+bool {\bfseries double\+Shot}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Draws a line of bullets that are aimed at the palyer. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a2fe524ec547d8e96bf153e7aeed94294}\label{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a2fe524ec547d8e96bf153e7aeed94294}} 
+\index{Enemy.BulletPatterns.EpAimLine@{Enemy.BulletPatterns.EpAimLine}!Begin@{Begin}}
+\index{Begin@{Begin}!Enemy.BulletPatterns.EpAimLine@{Enemy.BulletPatterns.EpAimLine}}
+\doxysubsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily override void Enemy.\+Bullet\+Patterns.\+Ep\+Aim\+Line.\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Begins the enemy pattern to be repeated. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a81817ce101e10d92b49a1cccfb1bec5f}{Enemy.\+Enemy\+Pattern}}.
+
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_ab9f5e07fd1bc9921108827b473fd4573}\label{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_ab9f5e07fd1bc9921108827b473fd4573}} 
+\index{Enemy.BulletPatterns.EpAimLine@{Enemy.BulletPatterns.EpAimLine}!Fire@{Fire}}
+\index{Fire@{Fire}!Enemy.BulletPatterns.EpAimLine@{Enemy.BulletPatterns.EpAimLine}}
+\doxysubsubsection{\texorpdfstring{Fire()}{Fire()}}
+{\footnotesize\ttfamily override void Enemy.\+Bullet\+Patterns.\+Ep\+Aim\+Line.\+Fire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Repeats individual fire until it reaches the end of the line, then changes direction. 
+
+
+
+Implements \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a32fbc6649edc5be026323a99fe39ca53}{Enemy.\+Enemy\+Pattern}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dakota/\+Rogue\+Shooter/\+Assets/\+Scripts/\+Enemy/\+Bullet\+Patterns/Ep\+Aim\+Line.\+cs\end{DoxyCompactItemize}

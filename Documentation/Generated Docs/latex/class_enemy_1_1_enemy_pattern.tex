@@ -1,0 +1,192 @@
+\hypertarget{class_enemy_1_1_enemy_pattern}{}\doxysection{Enemy.\+Enemy\+Pattern Class Reference}
+\label{class_enemy_1_1_enemy_pattern}\index{Enemy.EnemyPattern@{Enemy.EnemyPattern}}
+
+
+Abstract class for new enemy patterns.  
+
+
+Inheritance diagram for Enemy.\+Enemy\+Pattern\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{class_enemy_1_1_enemy_pattern}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_ab89dce4477d910ba3dd141d7d09c0817}{Get\+Elements}} ()
+\begin{DoxyCompactList}\small\item\em Gets necessary elements for all enemy patterns. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a71d57d0ccb573334dfd10e74bfcdb46f}{Single\+Fire}} (Vector3 vel, Vector3 start\+Offset)
+\begin{DoxyCompactList}\small\item\em Fires a singular bullet at a velocity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a85e4f7bb69f6a096813c23ac167bc782}{Single\+Fire}} (Vector3 vel, Vector3 start\+Offset, float\mbox{[}$\,$\mbox{]} timeline, float\mbox{[}$\,$\mbox{]} speeds)
+\begin{DoxyCompactList}\small\item\em Fires a singular bullet at a velocity with keyframes for changing velocity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a25f482d0029ac682ed2479ecba298708}{Single\+Fire}} (Vector3 vel, float\mbox{[}$\,$\mbox{]} timeline, float\mbox{[}$\,$\mbox{]} speeds)
+\begin{DoxyCompactList}\small\item\em Fires a singular bullet at a velocity with keyframes for changing velocity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a637490432732f2fa292a64c849eb3a6c}{Single\+Fire}} (Vector3 vel)
+\begin{DoxyCompactList}\small\item\em Fires a singular bullet at a velocity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a81817ce101e10d92b49a1cccfb1bec5f}{Begin}} ()
+\begin{DoxyCompactList}\small\item\em Begins the enemy pattern to be repeated. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_ade61b1c66f11012c299d797d6bee419c}{End}} ()
+\begin{DoxyCompactList}\small\item\em Ends the enemy pattern. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a32fbc6649edc5be026323a99fe39ca53}{Fire}} ()
+\begin{DoxyCompactList}\small\item\em Abstract method to be called by \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a81817ce101e10d92b49a1cccfb1bec5f}{Begin()}} and \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_ade61b1c66f11012c299d797d6bee419c}{End()}} or somewhere else within child object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_adce5ad8ef4c5e47b30565a0fbfb85b68}\label{class_enemy_1_1_enemy_pattern_adce5ad8ef4c5e47b30565a0fbfb85b68}} 
+Game\+Object {\bfseries enemy\+Bullet\+Prefab}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_a798261c13eb498443e861ab11bb3e058}\label{class_enemy_1_1_enemy_pattern_a798261c13eb498443e861ab11bb3e058}} 
+float {\bfseries rate\+Of\+Fire}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_ae015cfe0aceacf0a361da5f5b40901dd}\label{class_enemy_1_1_enemy_pattern_ae015cfe0aceacf0a361da5f5b40901dd}} 
+Game\+Object {\bfseries target}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_ae54f1a1e8a4edcc376147fa5b333cff6}\label{class_enemy_1_1_enemy_pattern_ae54f1a1e8a4edcc376147fa5b333cff6}} 
+Vector2 {\bfseries Final\+Velocity}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_a495b7edc8ae9654972e7bac0c4f75752}\label{class_enemy_1_1_enemy_pattern_a495b7edc8ae9654972e7bac0c4f75752}} 
+\mbox{\hyperlink{class_enemy_1_1_enemy_bullet_fire}{Enemy\+Bullet\+Fire}} {\bfseries Fire\+Script}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_abbabfa18449843ee4312fb464b482956}\label{class_enemy_1_1_enemy_pattern_abbabfa18449843ee4312fb464b482956}} 
+bool {\bfseries Invoking}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_a37cfd927848fdd238aa5e1694e1f76ff}\label{class_enemy_1_1_enemy_pattern_a37cfd927848fdd238aa5e1694e1f76ff}} 
+\mbox{\hyperlink{class_player_1_1_lives}{Lives}} {\bfseries Life}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for new enemy patterns. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_a81817ce101e10d92b49a1cccfb1bec5f}\label{class_enemy_1_1_enemy_pattern_a81817ce101e10d92b49a1cccfb1bec5f}} 
+\index{Enemy.EnemyPattern@{Enemy.EnemyPattern}!Begin@{Begin}}
+\index{Begin@{Begin}!Enemy.EnemyPattern@{Enemy.EnemyPattern}}
+\doxysubsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily virtual void Enemy.\+Enemy\+Pattern.\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Begins the enemy pattern to be repeated. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_a2fe524ec547d8e96bf153e7aeed94294}{Enemy.\+Bullet\+Patterns.\+Ep\+Aim\+Line}}, \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase3_a4ad8792ce9f33ee3938133da35fc1402}{Enemy.\+Bullet\+Patterns.\+Boss\+\_\+1.\+Phase3}}, and \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_ad062e9903fcc0539d5ea58b4a6374a10}{Enemy.\+Bullet\+Patterns.\+Boss\+\_\+1.\+Phase1}}.
+
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_ade61b1c66f11012c299d797d6bee419c}\label{class_enemy_1_1_enemy_pattern_ade61b1c66f11012c299d797d6bee419c}} 
+\index{Enemy.EnemyPattern@{Enemy.EnemyPattern}!End@{End}}
+\index{End@{End}!Enemy.EnemyPattern@{Enemy.EnemyPattern}}
+\doxysubsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily virtual void Enemy.\+Enemy\+Pattern.\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Ends the enemy pattern. 
+
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_a32fbc6649edc5be026323a99fe39ca53}\label{class_enemy_1_1_enemy_pattern_a32fbc6649edc5be026323a99fe39ca53}} 
+\index{Enemy.EnemyPattern@{Enemy.EnemyPattern}!Fire@{Fire}}
+\index{Fire@{Fire}!Enemy.EnemyPattern@{Enemy.EnemyPattern}}
+\doxysubsubsection{\texorpdfstring{Fire()}{Fire()}}
+{\footnotesize\ttfamily abstract void Enemy.\+Enemy\+Pattern.\+Fire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract method to be called by \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a81817ce101e10d92b49a1cccfb1bec5f}{Begin()}} and \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_ade61b1c66f11012c299d797d6bee419c}{End()}} or somewhere else within child object. 
+
+
+
+Implemented in \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_shotgun_aim_ad9b0bc7f7b167877a97bd9177f28718d}{Enemy.\+Bullet\+Patterns.\+Shotgun\+Aim}}, \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_ep_aim_line_ab9f5e07fd1bc9921108827b473fd4573}{Enemy.\+Bullet\+Patterns.\+Ep\+Aim\+Line}}, \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_ep_aim_ac0445c4a9e983af78ddccfdbacf28e84}{Enemy.\+Bullet\+Patterns.\+Ep\+Aim}}, \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_circle_blast_a17d39aefd0fd148e6206447bea14ac2d}{Enemy.\+Bullet\+Patterns.\+Circle\+Blast}}, \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase4_a1d8efd97b10df440fd104b090dcf051b}{Enemy.\+Bullet\+Patterns.\+Boss\+\_\+1.\+Phase4}}, \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase3_a9cf732a311e3a45d816a147089da913b}{Enemy.\+Bullet\+Patterns.\+Boss\+\_\+1.\+Phase3}}, \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase2_ac62e965811d51dc877f864f132d40619}{Enemy.\+Bullet\+Patterns.\+Boss\+\_\+1.\+Phase2}}, and \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_ae0356b4c3f5b8042fababda24a8eaf8c}{Enemy.\+Bullet\+Patterns.\+Boss\+\_\+1.\+Phase1}}.
+
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_ab89dce4477d910ba3dd141d7d09c0817}\label{class_enemy_1_1_enemy_pattern_ab89dce4477d910ba3dd141d7d09c0817}} 
+\index{Enemy.EnemyPattern@{Enemy.EnemyPattern}!GetElements@{GetElements}}
+\index{GetElements@{GetElements}!Enemy.EnemyPattern@{Enemy.EnemyPattern}}
+\doxysubsubsection{\texorpdfstring{GetElements()}{GetElements()}}
+{\footnotesize\ttfamily void Enemy.\+Enemy\+Pattern.\+Get\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets necessary elements for all enemy patterns. 
+
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_a637490432732f2fa292a64c849eb3a6c}\label{class_enemy_1_1_enemy_pattern_a637490432732f2fa292a64c849eb3a6c}} 
+\index{Enemy.EnemyPattern@{Enemy.EnemyPattern}!SingleFire@{SingleFire}}
+\index{SingleFire@{SingleFire}!Enemy.EnemyPattern@{Enemy.EnemyPattern}}
+\doxysubsubsection{\texorpdfstring{SingleFire()}{SingleFire()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Enemy.\+Enemy\+Pattern.\+Single\+Fire (\begin{DoxyParamCaption}\item[{Vector3}]{vel }\end{DoxyParamCaption})}
+
+
+
+Fires a singular bullet at a velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vel} & Vector3D representing velocity.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_a25f482d0029ac682ed2479ecba298708}\label{class_enemy_1_1_enemy_pattern_a25f482d0029ac682ed2479ecba298708}} 
+\index{Enemy.EnemyPattern@{Enemy.EnemyPattern}!SingleFire@{SingleFire}}
+\index{SingleFire@{SingleFire}!Enemy.EnemyPattern@{Enemy.EnemyPattern}}
+\doxysubsubsection{\texorpdfstring{SingleFire()}{SingleFire()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Enemy.\+Enemy\+Pattern.\+Single\+Fire (\begin{DoxyParamCaption}\item[{Vector3}]{vel,  }\item[{float\mbox{[}$\,$\mbox{]}}]{timeline,  }\item[{float\mbox{[}$\,$\mbox{]}}]{speeds }\end{DoxyParamCaption})}
+
+
+
+Fires a singular bullet at a velocity with keyframes for changing velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vel} & Vector3D representing velocity.\\
+\hline
+{\em timeline} & Times that the bullet will change speed.\\
+\hline
+{\em speeds} & Velocities that the bullet will change to.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_a71d57d0ccb573334dfd10e74bfcdb46f}\label{class_enemy_1_1_enemy_pattern_a71d57d0ccb573334dfd10e74bfcdb46f}} 
+\index{Enemy.EnemyPattern@{Enemy.EnemyPattern}!SingleFire@{SingleFire}}
+\index{SingleFire@{SingleFire}!Enemy.EnemyPattern@{Enemy.EnemyPattern}}
+\doxysubsubsection{\texorpdfstring{SingleFire()}{SingleFire()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Enemy.\+Enemy\+Pattern.\+Single\+Fire (\begin{DoxyParamCaption}\item[{Vector3}]{vel,  }\item[{Vector3}]{start\+Offset }\end{DoxyParamCaption})}
+
+
+
+Fires a singular bullet at a velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vel} & Vector3D representing velocity.\\
+\hline
+{\em start\+Offset} & Offset from Game\+Object\textquotesingle{}s position.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_1_1_enemy_pattern_a85e4f7bb69f6a096813c23ac167bc782}\label{class_enemy_1_1_enemy_pattern_a85e4f7bb69f6a096813c23ac167bc782}} 
+\index{Enemy.EnemyPattern@{Enemy.EnemyPattern}!SingleFire@{SingleFire}}
+\index{SingleFire@{SingleFire}!Enemy.EnemyPattern@{Enemy.EnemyPattern}}
+\doxysubsubsection{\texorpdfstring{SingleFire()}{SingleFire()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Enemy.\+Enemy\+Pattern.\+Single\+Fire (\begin{DoxyParamCaption}\item[{Vector3}]{vel,  }\item[{Vector3}]{start\+Offset,  }\item[{float\mbox{[}$\,$\mbox{]}}]{timeline,  }\item[{float\mbox{[}$\,$\mbox{]}}]{speeds }\end{DoxyParamCaption})}
+
+
+
+Fires a singular bullet at a velocity with keyframes for changing velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vel} & Vector3D representing velocity.\\
+\hline
+{\em start\+Offset} & Offset from Game\+Object\textquotesingle{}s position\\
+\hline
+{\em timeline} & Times that the bullet will change speed.\\
+\hline
+{\em speeds} & Velocities that the bullet will change to.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dakota/\+Rogue\+Shooter/\+Assets/\+Scripts/\+Enemy/Enemy\+Pattern.\+cs\end{DoxyCompactItemize}

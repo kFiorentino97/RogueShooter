@@ -1,0 +1,89 @@
+\hypertarget{class_enemy_1_1_movement_path}{}\doxysection{Enemy.\+Movement\+Path Class Reference}
+\label{class_enemy_1_1_movement_path}\index{Enemy.MovementPath@{Enemy.MovementPath}}
+
+
+Displays the movement path within the Unity editor.  
+
+
+Inheritance diagram for Enemy.\+Movement\+Path\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy_1_1_movement_path}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_movement_path_a2cd913e27b7f626f5eab71f9ac3f3c19}\label{class_enemy_1_1_movement_path_a2cd913e27b7f626f5eab71f9ac3f3c19}} 
+enum class {\bfseries Path\+Types} \{ {\bfseries Loop}
+, {\bfseries Linear}
+, {\bfseries End}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_movement_path_a2befe4ebcf14ce0f283b55d006d8cf49}\label{class_enemy_1_1_movement_path_a2befe4ebcf14ce0f283b55d006d8cf49}} 
+void {\bfseries Reset} ()
+\item 
+void \mbox{\hyperlink{class_enemy_1_1_movement_path_a2d339b7925917df87127976fd274a5c4}{On\+Draw\+Gizmos}} ()
+\begin{DoxyCompactList}\small\item\em Draws lines in unity editor to represent paths. \end{DoxyCompactList}\item 
+IEnumerator$<$ Transform $>$ \mbox{\hyperlink{class_enemy_1_1_movement_path_ab9dc353f1878545fdc196d467880fd8a}{Get\+Next\+Path\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Gets the next point in the path sequence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_movement_path_a354ee9afd6d0305b3f82eea06ed5856a}\label{class_enemy_1_1_movement_path_a354ee9afd6d0305b3f82eea06ed5856a}} 
+Path\+Types {\bfseries path\+Type}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_movement_path_a7a6c566a93a0721beccc0891107f912c}\label{class_enemy_1_1_movement_path_a7a6c566a93a0721beccc0891107f912c}} 
+int {\bfseries movement\+Direction} = 1
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_movement_path_a337569f81c8921775da98d55edcc5997}\label{class_enemy_1_1_movement_path_a337569f81c8921775da98d55edcc5997}} 
+int {\bfseries next\+Point}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_movement_path_a56ad02bc448516eb573beafdbb4b0992}\label{class_enemy_1_1_movement_path_a56ad02bc448516eb573beafdbb4b0992}} 
+Transform\mbox{[}$\,$\mbox{]} {\bfseries path\+Sequence}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_movement_path_a40f319881c739532d4b3c93e4f9e21d4}\label{class_enemy_1_1_movement_path_a40f319881c739532d4b3c93e4f9e21d4}} 
+bool {\bfseries Ended}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Displays the movement path within the Unity editor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_1_1_movement_path_ab9dc353f1878545fdc196d467880fd8a}\label{class_enemy_1_1_movement_path_ab9dc353f1878545fdc196d467880fd8a}} 
+\index{Enemy.MovementPath@{Enemy.MovementPath}!GetNextPathPoint@{GetNextPathPoint}}
+\index{GetNextPathPoint@{GetNextPathPoint}!Enemy.MovementPath@{Enemy.MovementPath}}
+\doxysubsubsection{\texorpdfstring{GetNextPathPoint()}{GetNextPathPoint()}}
+{\footnotesize\ttfamily IEnumerator$<$Transform$>$ Enemy.\+Movement\+Path.\+Get\+Next\+Path\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the next point in the path sequence. 
+
+\begin{DoxyReturn}{Returns}
+Next point in the path sequence.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_enemy_1_1_movement_path_a2d339b7925917df87127976fd274a5c4}\label{class_enemy_1_1_movement_path_a2d339b7925917df87127976fd274a5c4}} 
+\index{Enemy.MovementPath@{Enemy.MovementPath}!OnDrawGizmos@{OnDrawGizmos}}
+\index{OnDrawGizmos@{OnDrawGizmos}!Enemy.MovementPath@{Enemy.MovementPath}}
+\doxysubsubsection{\texorpdfstring{OnDrawGizmos()}{OnDrawGizmos()}}
+{\footnotesize\ttfamily void Enemy.\+Movement\+Path.\+On\+Draw\+Gizmos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws lines in unity editor to represent paths. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dakota/\+Rogue\+Shooter/\+Assets/\+Scripts/\+Enemy/Movement\+Path.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1}{}\doxysection{Enemy.\+Bullet\+Patterns.\+Boss\+\_\+1.\+Phase1 Class Reference}
+\label{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1}\index{Enemy.BulletPatterns.Boss\_1.Phase1@{Enemy.BulletPatterns.Boss\_1.Phase1}}
+
+
+{\ttfamily \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1}{Phase1}}} is the first pattern of the first boss. Bullets go in a circle around enemy based on radius, expand into a spirals and then contracts and then explodes.  
+
+
+Inheritance diagram for Enemy.\+Bullet\+Patterns.\+Boss\+\_\+1.\+Phase1\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_ad062e9903fcc0539d5ea58b4a6374a10}{Begin}} ()
+\begin{DoxyCompactList}\small\item\em Begins the enemy pattern to be repeated. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_ae0356b4c3f5b8042fababda24a8eaf8c}{Fire}} ()
+\begin{DoxyCompactList}\small\item\em Abstract method to be called by \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_ad062e9903fcc0539d5ea58b4a6374a10}{Begin()}} and \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_ade61b1c66f11012c299d797d6bee419c}{End()}} or somewhere else within child object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_a3f890b7a96169ca2dc9250661040003d}{Individual\+Fire}} ()
+\begin{DoxyCompactList}\small\item\em For each individual unit spawned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_a360596486e097c435ffba23ea53de3ff}\label{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_a360596486e097c435ffba23ea53de3ff}} 
+float {\bfseries radius}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_a8666837a9306aa8b7944a4a558a7e070}\label{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_a8666837a9306aa8b7944a4a558a7e070}} 
+float {\bfseries repeat\+Delay}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_a48d3ddd773b0ee881df205cf3f6e09fa}\label{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_a48d3ddd773b0ee881df205cf3f6e09fa}} 
+int {\bfseries bullet\+Count}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_afdd97f8132b6f5cd8292fb9c2c5a3c88}\label{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_afdd97f8132b6f5cd8292fb9c2c5a3c88}} 
+int {\bfseries direction} = 1
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_a084610677e92f441bc8f14f2bb14697e}\label{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_a084610677e92f441bc8f14f2bb14697e}} 
+float\mbox{[}$\,$\mbox{]} {\bfseries timeline}
+\item 
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_adc6dfc69d8333c53bd22a72cb6793e49}\label{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_adc6dfc69d8333c53bd22a72cb6793e49}} 
+float {\bfseries rotations}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1}{Phase1}}} is the first pattern of the first boss. Bullets go in a circle around enemy based on radius, expand into a spirals and then contracts and then explodes. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_ad062e9903fcc0539d5ea58b4a6374a10}\label{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_ad062e9903fcc0539d5ea58b4a6374a10}} 
+\index{Enemy.BulletPatterns.Boss\_1.Phase1@{Enemy.BulletPatterns.Boss\_1.Phase1}!Begin@{Begin}}
+\index{Begin@{Begin}!Enemy.BulletPatterns.Boss\_1.Phase1@{Enemy.BulletPatterns.Boss\_1.Phase1}}
+\doxysubsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily override void Enemy.\+Bullet\+Patterns.\+Boss\+\_\+1.\+Phase1.\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Begins the enemy pattern to be repeated. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a81817ce101e10d92b49a1cccfb1bec5f}{Enemy.\+Enemy\+Pattern}}.
+
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_ae0356b4c3f5b8042fababda24a8eaf8c}\label{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_ae0356b4c3f5b8042fababda24a8eaf8c}} 
+\index{Enemy.BulletPatterns.Boss\_1.Phase1@{Enemy.BulletPatterns.Boss\_1.Phase1}!Fire@{Fire}}
+\index{Fire@{Fire}!Enemy.BulletPatterns.Boss\_1.Phase1@{Enemy.BulletPatterns.Boss\_1.Phase1}}
+\doxysubsubsection{\texorpdfstring{Fire()}{Fire()}}
+{\footnotesize\ttfamily override void Enemy.\+Bullet\+Patterns.\+Boss\+\_\+1.\+Phase1.\+Fire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Abstract method to be called by \mbox{\hyperlink{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_ad062e9903fcc0539d5ea58b4a6374a10}{Begin()}} and \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_ade61b1c66f11012c299d797d6bee419c}{End()}} or somewhere else within child object. 
+
+
+
+Implements \mbox{\hyperlink{class_enemy_1_1_enemy_pattern_a32fbc6649edc5be026323a99fe39ca53}{Enemy.\+Enemy\+Pattern}}.
+
+\mbox{\Hypertarget{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_a3f890b7a96169ca2dc9250661040003d}\label{class_enemy_1_1_bullet_patterns_1_1_boss__1_1_1_phase1_a3f890b7a96169ca2dc9250661040003d}} 
+\index{Enemy.BulletPatterns.Boss\_1.Phase1@{Enemy.BulletPatterns.Boss\_1.Phase1}!IndividualFire@{IndividualFire}}
+\index{IndividualFire@{IndividualFire}!Enemy.BulletPatterns.Boss\_1.Phase1@{Enemy.BulletPatterns.Boss\_1.Phase1}}
+\doxysubsubsection{\texorpdfstring{IndividualFire()}{IndividualFire()}}
+{\footnotesize\ttfamily void Enemy.\+Bullet\+Patterns.\+Boss\+\_\+1.\+Phase1.\+Individual\+Fire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+For each individual unit spawned. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dakota/\+Rogue\+Shooter/\+Assets/\+Scripts/\+Enemy/\+Bullet\+Patterns/\+Boss 1/Phase1.\+cs\end{DoxyCompactItemize}

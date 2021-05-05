@@ -1,0 +1,120 @@
+\hypertarget{class_dialogue_scenes_1_1_dialogue_tree}{}\doxysection{Dialogue\+Scenes.\+Dialogue\+Tree Class Reference}
+\label{class_dialogue_scenes_1_1_dialogue_tree}\index{DialogueScenes.DialogueTree@{DialogueScenes.DialogueTree}}
+
+
+Tree list class of cutscene messages.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dialogue_scenes_1_1_dialogue_tree_af1c177299a53467fb8cc187438ff6ada}{Add}} (\mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} msg, int choice\+Count=1)
+\begin{DoxyCompactList}\small\item\em Adds message element to list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dialogue_scenes_1_1_dialogue_tree_afef4007c35c60618a9ca583d06fdb5a0}{Add\+Option}} (\mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} msg, int pos)
+\begin{DoxyCompactList}\small\item\em Adds an option to a \mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} element in the list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} \mbox{\hyperlink{class_dialogue_scenes_1_1_dialogue_tree_a75e374eacba8fc512cf55369c771c14b}{Get\+Next}} (int choice=0)
+\begin{DoxyCompactList}\small\item\em Gets next element in the list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} \mbox{\hyperlink{class_dialogue_scenes_1_1_dialogue_tree_ad317125fab34cc616df02a0ff50de9fc}{Get\+Prev}} ()
+\begin{DoxyCompactList}\small\item\em Gets previous message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} \mbox{\hyperlink{class_dialogue_scenes_1_1_dialogue_tree_a91fdd071df5dc936147515d986e082d0}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets current message in the dialogue tree to the top. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_scenes_1_1_dialogue_tree_ad0a90a3e3beb4565ae8e7d1364259ab6}\label{class_dialogue_scenes_1_1_dialogue_tree_ad0a90a3e3beb4565ae8e7d1364259ab6}} 
+\mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} {\bfseries head}
+\item 
+\mbox{\Hypertarget{class_dialogue_scenes_1_1_dialogue_tree_a2e71f9ff834df7ff620726f3b2505626}\label{class_dialogue_scenes_1_1_dialogue_tree_a2e71f9ff834df7ff620726f3b2505626}} 
+int {\bfseries size}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tree list class of cutscene messages. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dialogue_scenes_1_1_dialogue_tree_af1c177299a53467fb8cc187438ff6ada}\label{class_dialogue_scenes_1_1_dialogue_tree_af1c177299a53467fb8cc187438ff6ada}} 
+\index{DialogueScenes.DialogueTree@{DialogueScenes.DialogueTree}!Add@{Add}}
+\index{Add@{Add}!DialogueScenes.DialogueTree@{DialogueScenes.DialogueTree}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Dialogue\+Scenes.\+Dialogue\+Tree.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}}}]{msg,  }\item[{int}]{choice\+Count = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Adds message element to list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The \mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} object to be added to the list.\\
+\hline
+{\em choice\+Count} & The number of choices the player will have in the scene. One means the scene will proceed without prompting player for a choice.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dialogue_scenes_1_1_dialogue_tree_afef4007c35c60618a9ca583d06fdb5a0}\label{class_dialogue_scenes_1_1_dialogue_tree_afef4007c35c60618a9ca583d06fdb5a0}} 
+\index{DialogueScenes.DialogueTree@{DialogueScenes.DialogueTree}!AddOption@{AddOption}}
+\index{AddOption@{AddOption}!DialogueScenes.DialogueTree@{DialogueScenes.DialogueTree}}
+\doxysubsubsection{\texorpdfstring{AddOption()}{AddOption()}}
+{\footnotesize\ttfamily void Dialogue\+Scenes.\+Dialogue\+Tree.\+Add\+Option (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}}}]{msg,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Adds an option to a \mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} element in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The \mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} object to be added to the list as an option.\\
+\hline
+{\em pos} & The position the option will be added to\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dialogue_scenes_1_1_dialogue_tree_a75e374eacba8fc512cf55369c771c14b}\label{class_dialogue_scenes_1_1_dialogue_tree_a75e374eacba8fc512cf55369c771c14b}} 
+\index{DialogueScenes.DialogueTree@{DialogueScenes.DialogueTree}!GetNext@{GetNext}}
+\index{GetNext@{GetNext}!DialogueScenes.DialogueTree@{DialogueScenes.DialogueTree}}
+\doxysubsubsection{\texorpdfstring{GetNext()}{GetNext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} Dialogue\+Scenes.\+Dialogue\+Tree.\+Get\+Next (\begin{DoxyParamCaption}\item[{int}]{choice = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Gets next element in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & The choice at the current message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dialogue_scenes_1_1_dialogue_tree_ad317125fab34cc616df02a0ff50de9fc}\label{class_dialogue_scenes_1_1_dialogue_tree_ad317125fab34cc616df02a0ff50de9fc}} 
+\index{DialogueScenes.DialogueTree@{DialogueScenes.DialogueTree}!GetPrev@{GetPrev}}
+\index{GetPrev@{GetPrev}!DialogueScenes.DialogueTree@{DialogueScenes.DialogueTree}}
+\doxysubsubsection{\texorpdfstring{GetPrev()}{GetPrev()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} Dialogue\+Scenes.\+Dialogue\+Tree.\+Get\+Prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets previous message. 
+
+\begin{DoxyReturn}{Returns}
+The parent message of the current element.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dialogue_scenes_1_1_dialogue_tree_a91fdd071df5dc936147515d986e082d0}\label{class_dialogue_scenes_1_1_dialogue_tree_a91fdd071df5dc936147515d986e082d0}} 
+\index{DialogueScenes.DialogueTree@{DialogueScenes.DialogueTree}!Reset@{Reset}}
+\index{Reset@{Reset}!DialogueScenes.DialogueTree@{DialogueScenes.DialogueTree}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dialogue_scenes_1_1_message}{Message}} Dialogue\+Scenes.\+Dialogue\+Tree.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets current message in the dialogue tree to the top. 
+
+\begin{DoxyReturn}{Returns}
+Head of tree.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dakota/\+Rogue\+Shooter/\+Assets/\+Scripts/\+Dialogue\+Scenes/Dialogue\+Tree.\+cs\end{DoxyCompactItemize}
